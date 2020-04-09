@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2018-Present Okta, Inc.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.okta</groupId>
+        <artifactId>okta-parent</artifactId>
+        <version>16</version>
+    </parent>
+
+    <groupId>com.okta.shiro</groupId>
+    <artifactId>okta-shiro-parent</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Okta :: Shiro :: Parent</name>
+    <description>Okta Shiro Plugin</description>
+    <url>https://github.com/oktadeveloper/okta-shiro-plugin</url>
+    <inceptionYear>2020</inceptionYear>
+
+    <properties>
+        <okta.jwt.version>0.4.0</okta.jwt.version>
+        <shiro.version>1.5.2</shiro.version>
+        <resteasy.version>3.11.2.Final</resteasy.version>
+        <github.slug>okta/okta-shiro-plugin</github.slug>
+    </properties>
+
+    <modules>
+        <module>core</module>
+        <module>examples/servlet</module>
+        <module>examples/jaxrs</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- project modules -->
+            <dependency>
+                <groupId>com.okta.shiro</groupId>
+                <artifactId>okta-shiro-core</artifactId>
+                <version>0.1.0-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.okta.jwt</groupId>
+                <artifactId>okta-jwt-verifier</artifactId>
+                <version>${okta.jwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.okta.jwt</groupId>
+                <artifactId>okta-jwt-verifier-impl</artifactId>
+                <version>${okta.jwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-core</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+
+            <!-- examples -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>3.1.0</version>
+            </dependency>
+
+            <!-- logging -->
+            <dependency>
+                <!-- Required for any libraries that expect to call the commons logging APIs -->
+                <groupId>org.slf4j</groupId>
+                <artifactId>jcl-over-slf4j</artifactId>
+                <version>1.7.30</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>1.2.3</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <version>2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>3.3.3</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-maven-plugin</artifactId>
+                    <version>9.4.27.v20200227</version>
+                    <configuration>
+                        <httpConnector>
+                            <port>8000</port>
+                        </httpConnector>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
