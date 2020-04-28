@@ -35,20 +35,11 @@
             <groupId>com.okta.shiro</groupId>
             <artifactId>okta-shiro-core</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-servlet-plugin</artifactId>
-            <version>${shiro.version}</version>
-            <scope>runtime</scope>
-        </dependency>
-
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>jcl-over-slf4j</artifactId>
