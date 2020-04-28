@@ -56,7 +56,7 @@
             <!-- project modules -->
             <dependency>
                 <groupId>com.okta.shiro</groupId>
-                <artifactId>okta-shiro-core</artifactId>
+                <artifactId>okta-shiro-plugin</artifactId>
                 <version>0.1.0-SNAPSHOT</version>
             </dependency>
 

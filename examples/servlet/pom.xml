@@ -33,7 +33,7 @@
     <dependencies>
         <dependency>
             <groupId>com.okta.shiro</groupId>
-            <artifactId>okta-shiro-core</artifactId>
+            <artifactId>okta-shiro-plugin</artifactId>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
