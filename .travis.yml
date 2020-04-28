@@ -21,15 +21,3 @@ script:
 
 after_success:
 - bash <(curl -s https://codecov.io/bash) -f core/target/jacoco.exec
-
-deploy:
-- provider: pages
-  skip_cleanup: true
-  github_token: "$GH_API_KEY"
-  local_dir: target/gh-pages
-  email: developers@okta.com
-  name: Travis CI - Auto Doc Build
-  on:
-    jdk: openjdk8
-    branch: master
-    condition: "$TRAVIS_EVENT_TYPE != cron"

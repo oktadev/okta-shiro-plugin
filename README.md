@@ -88,7 +88,7 @@ oktaRealm = com.okta.shiro.realm.OktaResourceServerRealm
 # Set the issuer to your Okta org
 oktaRealm.issuer = https://{yourOktaDomain}/oauth2/default
 
-# Additionally, you can overried the following default values
+# Additionally, you can override the following default values
 oktaRealm.audience = "api://default"
 oktaRealm.groupClaim = "groups"
 oktaRealm.nameClaim = "sub"
