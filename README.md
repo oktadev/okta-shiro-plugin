@@ -12,7 +12,7 @@
 * [Building this project](#building-the-project)
 * [Contributing](#contributing)
 
-This repository contains a Shrio Realm for Okta, for use with OAuth2 Resource Servers.  This realm will validate Okta JWT access tokens.
+This repository contains a Shrio Realm for Okta, for use with OAuth 2.0 Resource Servers.  This realm will validate Okta JWT access tokens.
  
 We also publish these libraries for Java:
  
