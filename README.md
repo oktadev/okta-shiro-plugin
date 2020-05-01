@@ -109,8 +109,8 @@ OktaJwtPrincipal jwtPrincipal = (OktaJwtPrincipal) SecurityUtils.getSubject().ge
 
 See the examples to help you get started even faster:
 
-* JAX-RS
-* Servlet 
+* [JAX-RS](https://github.com/oktadeveloper/okta-shiro-plugin/tree/master/examples/jaxrs)
+* [Servlet](https://github.com/oktadeveloper/okta-shiro-plugin/tree/master/examples/servlet)
 
 ## Building the Project
 
