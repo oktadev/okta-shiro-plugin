@@ -1,0 +1,4 @@
+com.okta.shiro
+com.okta.shiro.example.jaxrs
+com.okta.shiro.example.jaxrs.resources
+com.okta.shiro.realm
