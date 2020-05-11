@@ -37,9 +37,9 @@
 
     <properties>
         <okta.jwt.version>0.4.0</okta.jwt.version>
-        <shiro.version>1.5.2</shiro.version>
+        <shiro.version>1.5.3</shiro.version>
         <resteasy.version>3.11.2.Final</resteasy.version>
-        <jackson.version>2.10.3</jackson.version>
+        <jackson.version>2.11.0</jackson.version>
 
         <github.slug>okta/okta-shiro-plugin</github.slug>
     </properties>
