@@ -25,7 +25,7 @@
 
     <groupId>com.okta.shiro</groupId>
     <artifactId>okta-shiro-parent</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Okta :: Shiro :: Parent</name>
@@ -55,7 +55,7 @@
             <dependency>
                 <groupId>com.okta.shiro</groupId>
                 <artifactId>okta-shiro-plugin</artifactId>
-                <version>0.1.0</version>
+                <version>0.1.1-SNAPSHOT</version>
             </dependency>
 
             <!-- transitive dependencies that need updating -->
@@ -147,9 +147,4 @@
             </plugins>
         </pluginManagement>
     </build>
-
-
-  <scm>
-    <tag>okta-shiro-parent-0.1.0</tag>
-  </scm>
 </project>
