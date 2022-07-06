@@ -35,7 +35,7 @@
 
     <properties>
         <okta.jwt.version>0.4.0</okta.jwt.version>
-        <shiro.version>1.8.0</shiro.version>
+        <shiro.version>1.9.1</shiro.version>
         <resteasy.version>3.11.2.Final</resteasy.version>
         <jackson.version>2.11.0</jackson.version>
 
